@@ -48,7 +48,8 @@
       "Bash(--repo DanielWRau/vergabehandbuch )",
       "Bash(--title \"Finale Ausgabe: KI-Handbuch für öffentliche Auftragsvergabe\" )",
       "Bash(--notes \"🎉 **Finale Ausgabe: Sprachmodelle in der öffentlichen Auftragsvergabe**\n\n📚 **Vollständiger Praxisleitfaden** - 237 Seiten | 18 Kapitel | 2.5MB\n\n✅ **Qualitätsmerkmale:**\n- FAZ-Zeitungsleser-Niveau durchgehend\n- Über 3.000 Code-Blöcke eliminiert  \n- Management-Fokus statt Technik-Details\n- Deutsche Rechtslage 2024/2025\n- Von 15 Expertenagenten überarbeitet\n\n🎯 **Zielgruppe:** Vergabeverantwortliche, Amtsleiter, Verwaltungsjuristen, Projektleiter\n\n🏛️ **Sofort einsetzbar** mit hunderten praktischen Templates und Checklisten\" )",
-      "Bash(Vergabebuch_2025_FINALE_AUSGABE.pdf)"
+      "Bash(Vergabebuch_2025_FINALE_AUSGABE.pdf)",
+      "Bash(git config:*)"
     ],
     "deny": []
   }
