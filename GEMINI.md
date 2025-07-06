@@ -4,19 +4,32 @@ Dieses Projekt ist ein umfassender Praxisleitfaden zur Anwendung von Sprachmodel
 
 ## Inhalt und Zweck
 
-Das Dokument ist als komplettes Buch strukturiert und behandelt folgende Kernthemen:
+Das Dokument ist als komplettes Buch in vier Teilen strukturiert:
 
-1.  **Grundlagen:** Vermittlung der sieben Kernfähigkeiten von LLMs (z.B. Komprimieren, Expandieren, Analysieren) und der Kunst des "Prompt Engineering".
-2.  **Strategie:** Ein 3-Stufen-Modell zur sicheren Einführung von KI in einer Behörde, mit starkem Fokus auf Datenschutz (DSGVO) und Risikomanagement.
-3.  **Praxis im Vergabeprozess:** Detaillierte Anwendung von KI in jeder Phase: Bedarfsanalyse, Markterkundung, Ausschreibungserstellung, Angebotswertung und Vertragsmanagement.
-4.  **Ausschreibungswerkstatt:** Ein durchgehendes, praktisches Fallbeispiel, das Schritt für Schritt zeigt, wie eine komplette Vergabeunterlage mit KI-Unterstützung erstellt wird.
-5.  **Sondersituationen:** Handhabung von Problemen wie Leistungsstörungen oder Nachprüfungsanträgen mit KI.
-6.  **Implementierung und Betrieb von KI-Systemen:** Technische, sicherheitsrelevante und finanzielle Aspekte der Implementierung (Cloud vs. On-Premise, Total Cost of Ownership) sowie die Bedeutung von Gebrauchstauglichkeit und menschzentrierter Gestaltung.
-7.  **Rechtliche und ethische Rahmenbedingungen:** Eine Auseinandersetzung mit den rechtlichen (DSGVO, AI Act) und ethischen Herausforderungen, inklusive der Notwendigkeit von Nachvollziehbarkeit (Explainable AI), der Problematik der Entscheidungsautomatisierung und dem Konzept des "Alignments".
-8.  **Die menschzentrierte Verwaltung der Zukunft:** Ein Ausblick auf den notwendigen Kulturwandel, die Bedeutung von Leuchtturmprojekten, Partizipation und der Qualifizierung von Mitarbeitern.
-9.  **Anhänge:** Eine Prompt-Bibliothek, technische Code-Beispiele (Python) und detaillierte Checklisten.
+**Teil 1: Die Grundlagen – Was Sie über KI wissen müssen**
+*   **Kapitel 1: Ein neues Werkzeug für die Verwaltung:** Die grundlegende Veränderung der Arbeit durch KI.
+*   **Kapitel 2: Wie Sprachmodelle "denken" – Input, Verarbeitung, Output:** Eine einfache Erklärung der technischen Grundlagen (Datenqualität, Bias, Lernmethoden) mit Praxisbeispielen aus der Vergabe.
+*   **Kapitel 3: Die Kunst der Anweisung – Effektives Prompt Engineering:** Vertiefung der Prompting-Methodik als Kernkompetenz, inklusive fortgeschrittener Techniken wie Chain-of-Thought und Multi-Perspektiven-Analyse.
 
-Ein besonderer Fokus wird darauf gelegt hinweise zu geben, wie die Ausgaben von Sprachmodellen verbessert werden können und wie personen Lernen können mit sprachmodellen umzugehen.
+**Teil 2: Strategie und Implementierung – KI sicher einführen**
+*   **Kapitel 4: Der sichere Start – Das 3-Stufen-Modell und der Kulturwandel:** Praktische Einführung von KI und die Notwendigkeit eines Kulturwandels zur Experimentierfreude.
+*   **Kapitel 5: Infrastruktur und Souveränität – Die richtige technische Basis schaffen:** Die strategische Entscheidung zwischen Cloud, On-Premise und Open Source.
+
+**Teil 3: Der Vergabeprozess in der Praxis – KI als Co-Pilot**
+*   **Kapitel 6:** Bedarfs- und Marktanalyse
+*   **Kapitel 7:** Die Ausschreibungswerkstatt
+*   **Kapitel 8:** Intelligente Angebotswertung
+*   **Kapitel 9:** Aktives Vertragsmanagement und Sondersituationen
+
+**Teil 4: Governance und Zukunft – Verantwortung und Vision**
+*   **Kapitel 10: Legal Tech im Vergaberecht: Ein Deep Dive:** Eine detaillierte Betrachtung der Anwendungsfelder, Tools und der Zukunft von Legal Tech in der öffentlichen Beschaffung.
+*   **Kapitel 11: Rechtliche und ethische Leitplanken:** Auseinandersetzung mit DSGVO, AI Act, Nachvollziehbarkeit (XAI), Entscheidungsautomatisierung und Alignment.
+*   **Kapitel 12: Die menschzentrierte Verwaltung der Zukunft:** Vision einer Verwaltung, die auf Mensch-KI-Kollaboration, Gebrauchstauglichkeit und Partizipation setzt.
+*   **Kapitel 13: Fazit und Ausblick**
+
+**Anhänge:** Eine Prompt-Bibliothek, technische Code-Beispiele (Python) und detaillierte Checklisten.
+
+Ein besonderer Fokus wird darauf gelegt, Hinweise zu geben, wie die Ausgaben von Sprachmodellen verbessert werden können und wie Personen lernen können, mit Sprachmodellen umzugehen.
 
 ## Stil und Tonalität
 
