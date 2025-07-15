@@ -1,0 +1,1139 @@
+Impulspapier
+Große Sprachmodelle in der 
+öffentlichen Verwaltung
+Christian Djeffal · Philipp Mehl 
+Über das NEGZ Impressum
+Das NEGZ · Kompetenznetzwerk Digitale Ver-
+waltung ist Fachnetzwerk und Denkfabrik zur 
+Digitalen Verwaltung.
+Wir bündeln die Expertise von Unternehmen, 
+Forschungseinrichtungen, öffentlichen Kör-
+perschaften und Verbänden, um die Digitali-
+sierung der deutschen Verwaltung zu unter-
+stützen und voranzutreiben.
+Wir veröffentlichen Studien und Impulse, 
+veranstalten Austauschformate, vermitteln 
+Kompetenzen und bringen uns in die Fach-dis-
+kussion ein.
+Erscheinungsjahr 2025 
+ 
+ISSN 2626-6032 
+DOI   10.30418/2626-6032.2025.1
+Dieses Werk ist nach „Creative Commons Na- 
+mensnennung 4.0 International“ lizensiert. Sie 
+dürfen das Werk bei Nennung der Urhebenden 
+und der Lizenz teilen und bearbeiten. 
+https://creativecommons.org/licenses/by/4.0
+Herausgeber
+NEGZ e.V. 
+Oberlandstraße 26–35 · 12099 Berlin 
+030 7543 89 55 
+office@negz.org · www.negz.org
+Gestaltung: Olena Rudman
+Titelbild: Designed by Freepik
+Inhaltlicher Ansprechpartner
+Prof. Dr. Christian Djeffal christian.djeffal@tum.de
+CC BY 4.0
+Expertenpanel: 
+•	 Harald Felling, CEO ]init[ AG für digitale 
+Kommunikation
+•	 Jörn Riedel, CIO der Freien und 
+Hansestadt Hamburg, Amt für IT und 
+Digitalisierung
+•	 Torsten Koß, Vorstand, Dataport AöR
+•	 Prof. Dr. Dieter Kugelmann, Landes-
+beauftragter für den Datenschutz 
+und die Informationsfreiheit in 
+Rheinland-Pfalz
+•	 Prof. Dr. Florian Matthes, Lehrstuhl für 
+Software Engineering Betrieblicher 
+Informationssysteme, TU München
+•	 Prof. Dr. Andreas Sudmann, Projekt-
+leiter des Projekts HiACS
+•	 Prof. Dr. Hermann Hill, Deutsche Uni-
+versität für Verwaltungswissenschaften 
+Speyer
+•	 Lorenz Lehmhaus, Head of Communi-
+cations, Aleph Alpha GmbH
+•	 Thomas Treml, Chief Technology Lead 
+Öffentliche Auftraggeber, Microsoft 
+Deutschland GmbH
+•	 André Pankraz, Prinicipal Software 
+Architect, ]init[ AG
+Moderation: 
+•	 Prof. Dr. Christian Djeffal, Professur für 
+Recht, Wissenschaft und Technologie, 
+TU München
+Autoren: 
+•	 Prof. Dr. Christian Djeffal, 
+•	 Philipp Mehl LL.M., 
+Der Roundtable wurde federführend von 
+Prof. Dr. Christian Djeffal und Harald Felling 
+konzipiert und organisiert, die während 
+des Prozesses unterschiedliche Rollen 
+einnahmen.
+Inhaltsverzeichnis
+Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                                       5
+1. Einleitung  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                                   6
+2. Aufbau und Methodik . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                          8
+            Diskussionsformat und -ablauf . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                    8
+            Datenerfassung und -auswertung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                 8
+            Reflexion der Methodik . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                          8
+3. Zentrale Aussagen als Ausgangspunkt für Diskussion und Entwicklung . . . . . . . . . . . . . . . .                9
+      3.1  Anwendung großer Sprachmodelle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                9
+            Generative KI als „Superwerkzeug“ für die Verwaltung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                              10
+            Spezialisierte Fachmodelle vs. generische „Sprachtaschenrechner“  . . . . . . . . . . . . . . . . . .                  10
+            Potentiale in der Verwaltung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                     11
+            Feingetunte Spezialisten oder der große Sprachtaschenrechner?  . . . . . . . . . . . . . . . . . . . . .                     11
+     3.2 Infrastruktur  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                                  12
+            Das Servicemodell für die Verwaltung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                             12
+            Bedeutung der Implementierungsleistung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                         13
+            Herausforderungen bei Lizenzformen und Anbietern  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                13
+            Open Source . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                                  13
+     3.3 Regulierung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                                   14
+            Die Erforderlichkeit der Nachvollziehbarkeit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                       14
+            Problematik der Entscheidungsautomatisierung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                    14
+            Alignment als Gestaltungsmöglichkeit und Werkzeug . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                               15
+            Kulturwandel von Risikovermeidung zu Partizipation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                15
+4. Große Sprachmodelle – Chancen, Herausforderungen, Diskussionen . . . . . . . . . . . . . . . . .                 16
+Berichtverzeichnis  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                             17
+Literaturverzeichnis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                            18
+Über die Autoren . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                               19
+Abstract
+Große Sprachmodelle und generative KI bie-
+ten vielfältige Potenziale für die öffentliche 
+Verwaltung, werfen aber auch Fragen bezüg-
+lich effektiver Integration, Datenschutz 
+und Auswirkungen auf die Arbeitswelt auf. 
+Der Roundtable „Große Sprachmodelle in 
+der öffentlichen Verwaltung“ des NEGZ · 
+Kompetenznetzwerk Digitale Verwaltungbot 
+eine Plattform zur Erörterung dieser Themen 
+in den Bereichen Anwendung, Infrastruktur 
+und Regulierung.
+5
+6
+Große Sprachmodelle und generative KI 
+haben das Potenzial, die Arbeitsweise der 
+öffentlichen Verwaltung grundlegend zu 
+verändern und zu verbessern. Durch den 
+Einsatz von Technologien wie natürlicher 
+Sprachverarbeitung (NLP), Bildgenerierung 
+und Textgenerierung eröffnen sich viel-
+fältige Möglichkeiten, Verwaltungsprozesse 
+zu automatisieren, zu beschleunigen und 
+bürgernäher zu gestalten. Gleichzeitig wirft 
+die Nutzung dieser Technologien aber auch 
+eine Reihe von Fragen auf: 
+•	 Wie können generative KI-Systeme effek-
+tiv in die Verwaltungsarbeit integriert 
+werden und welche Anwendungsfälle 
+versprechen den größten Mehrwert1? 
+•	 Und lassen sich dabei ethische, rechtliche 
+und soziale Aspekte wie Datenschutz, 
+Transparenz und ethische Standards 
+gewährleisten2? 
+Diese und weitere Fragen standen im 
+Mittelpunkt des Roundtable „Große Sprach-
+modelle in der öffentlichen Verwaltung“, der 
+vom NEGZ · Kompetenznetzwerk Digitale 
+Verwaltung organisiert wurde.
+Neben den praktischen Herausforderungen 
+der neuen Technologie wurden auch Risiken 
+und Herausforderungen3 beim Einsatz gene-
+rativer KI in der öffentlichen Verwaltung 
+im Rahmen des Roundtable eingehend dis-
+kutiert. Ein zentraler Punkt ist der Schutz 
+sensibler Daten und die Wahrung der Privat-
+sphäre der Bürger. Da generative KI-Systeme 
+auf großen Datenmengen trainiert werden, 
+muss sichergestellt sein, dass personen-
+bezogene Informationen geschützt und 
+nicht missbraucht werden.4  Auch besteht 
+die  Gefahr, dass große Modelle bestehende 
+Vorurteile und Diskriminierungen 
+reproduzieren oder sogar verstärken. Um 
+dem entgegenzuwirken, sind Transparenz, 
+1   Bright et al. 2024; Salah et al. 2023.
+2   David 2024.
+3   Gupta et al. 2023; Myers et al. 2023.
+4   Schneider 2024; Beltran et al. 2024, S. 610.
+5   Bevara et al. 2024; Fang et al. 2023; Ghosh und Caliskan 2023; Cambria et al. 2024; Barman et al. 2024.
+6   David 2024; Niari 2024.
+7   Siehe die Texte im Berichtsverzeichnis unten.
+Überprüfbarkeit und ethische Richtlinien 
+bei der Entwicklung und Anwendung gene-
+rativer KI unerlässlich.5 Nicht zuletzt stellt 
+sich die Frage nach den Auswirkungen auf 
+die Zukunft der Arbeit in der Verwaltung.6 
+Während generative KI einerseits Mitarbeiter 
+entlasten und für höherwertige Aufgaben 
+freistellen kann, besteht andererseits die 
+Sorge vor einem Wegfall von Arbeitsplätzen. 
+Hier gilt es, frühzeitig Konzepte zu ent-
+wickeln, wie die Mitarbeiter für den Einsatz 
+von KI qualifiziert und die Transformation 
+sozialverträglich gestaltet werden kann. 
+Der Roundtable bot eine Plattform, um 
+diese Herausforderungen zu erörtern und 
+gemeinsam Lösungsansätze zu entwickeln.
+Der Roundtable „Große Sprachmodelle in der 
+öffentlichen Verwaltung“ wurde vom NEGZ 
+· Kompetenznetzwerk Digitale Verwaltung 
+am 12.09.23 online organisiert, um die Rolle 
+dieser Modelle in der Verwaltung zu erörtern 
+und Fragen für das Agendasetting in diesem 
+Bereich aufzuarbeiten. Die Veranstaltung 
+war in drei Themenblöcke gegliedert: 
+„Anwendung großer Sprachmodelle“, 
+„Infrastruktur“ und „Regulierung“.
+Zum Anstoß der Diskussion waren die Teil-
+nehmer vorab dazu eingeladen worden, zu je 
+einem der Themenblöcke ein Eingangsstate-
+ment abzugeben. Jörn Riedel, Lorenz Lehm-
+haus und Thomas Treml gaben zum Thema 
+„Anwendung von großen Sprachmodellen“, 
+Torsten Koß zur „Infrastruktur“ und Prof. 
+Dr. Dieter Kugelmann zur „Regulierung“ ein 
+Statement ab. Grundsätzlich konnten sich 
+aber alle Teilnehmer zu jedem Themenpunkt 
+äußern.
+Das Panel diskutierte Fragen, die aus prakti-
+schen Berichten abgeleitet wurden7,  welche 
+die Potenziale und Herausforderungen 
+großer Sprachmodelle in der öffentlichen 
+Verwaltung skizzierten. Diese Texte dienten 
+1. Einleitung 
+7
+als Ausgangspunkt für die Diskussionen 
+und behandelten unter anderem folgende 
+Aspekte:
+1.	 Gewinnbringende Anwendungsberei-
+che für die öffentliche Verwaltung, 
+wie die Automatisierung von Routine-
+aufgaben und die Verbesserung der 
+Entscheidungsfindung durch fundierte 
+Datenanalysen.
+2.	 Die Rolle der Verwaltung bei der Bereit-
+stellung von Infrastruktur für große 
+Sprachmodelle, beispielsweise durch 
+die Bereitstellung von Daten, die Fest-
+legung von Standards und die Schaffung 
+geeigneter rechtlicher und ethischer 
+Rahmenbedingungen. 
+3.	 Die Aufsichtsrolle der Verwaltung, 
+einschließlich der Schaffung von 
+Regulierungen und Überwachungs-
+mechanismen sowie der Förderung von 
+Transparenz und Rechenschaftspflicht, 
+um Herausforderungen in Bezug auf 
+Datenschutz, Ethik und Verantwortlich-
+keit zu bewältigen.
+Ziel des Roundtable war es, durch die 
+Zusammenkunft von Experten aus Ver-
+waltung, Wirtschaft, Wissenschaft und 
+Gesellschaft eine gemeinsame Agenda für 
+die erfolgreiche Integration großer Sprach-
+modelle in die öffentliche Verwaltung zu 
+entwickeln. Die skizzierten Antworten 
+in den Ausgangstexten dienten dabei als 
+Grundlage für die Diskussionen und sollten 
+dazu beitragen, das volle Potenzial dieser 
+Technologie für die Verwaltung auszuloten 
+und gleichzeitig die damit verbundenen 
+Herausforderungen zu adressieren.
+Relevante Begriffe zur Einflussnahme auf große Sprachmodelle:
+Tabelle 1: Erläuterungen zu einigen Begriffen, die für die Beeinflussung von Sprachmodellen relevant sind
+8
+Für den Roundtable wurden Stakeholder aus 
+den Bereichen Wissenschaft, Verwaltung, 
+Wirtschaft und Zivilgesellschaft eingeladen, 
+um eine möglichst breite Perspektive auf das 
+Thema „Große Sprachmodelle in der öffent-
+lichen Verwaltung“ zu gewinnen. Ziel war es, 
+aus jeder Stakeholdergruppe Vertreter mit 
+unterschiedlichen Rollen und Expertisen zu 
+gewinnen, um der explorativen Ausrichtung 
+des Roundtable gerecht zu werden und 
+verschiedene Ansätze und Problematisie-
+rungen einzubeziehen. Bedauerlicherweise 
+sagten kurzfristig zwei Teilnehmer aus der 
+Zivilgesellschaft sowie drei weibliche Teil-
+nehmerinnen ab, wodurch sich eine leichte 
+Verschiebung in der angestrebten Gleichver-
+teilung der Gruppen und Geschlechter ergab. 
+Dennoch kann die finale Zusammensetzung 
+der Runde als grundsätzlich repräsentativ 
+für die relevanten Stakeholder des Themas 
+betrachtet werden.
+Diskussionsformat und -ablauf
+Die Diskussion folgte einem semi-struk-
+turierten Gesprächsleitfaden und war 
+in drei thematische Blöcke von je einer 
+Stunde unterteilt. Innerhalb dieser Blöcke 
+konnten sich die Teilnehmer frei äußern 
+und das Gespräch entfalten. Der Moderator 
+beschränkte sich auf eine zurückhaltende, 
+nicht-inhaltliche Rolle und gab lediglich 
+Orientierung für den Gesprächsablauf. Die 
+Leitfragen für die Themenblöcke wurden im 
+Vorfeld aus der Literatur abgeleitet und den 
+Teilnehmern zur Vorbereitung zugesandt. 
+Sie dienten als Grundlage und Impulse für 
+die Diskussion, ohne diese jedoch strikt zu 
+begrenzen.
+Datenerfassung und -auswertung
+Die Roundtable-Gespräche wurden mittels 
+Audioaufnahme dokumentiert, transkribiert 
+und in Anlehnung an die qualitative Inhalts-
+analyse thematisch kodiert und zusammen-
+gefasst. Durch den Vergleich der Positionen 
+und Aussagen konnten hierbei Konsens- und 
+Dissensbereiche zwischen den Stakeholder-
+gruppen herausgearbeitet werden.
+Reflexion der Methodik
+Das gewählte Diskussionsformat ermöglichte 
+einen offenen Wissens- und Meinungsaus-
+tausch zwischen den Stakeholdern und 
+erwies sich als geeignet für die explorative 
+Ausrichtung des Roundtable. Durch die 
+Zusammenführung komplementärer Pers-
+pektiven konnten initiale Problembereiche 
+identifiziert und Ansätze skizziert werden.
+Einschränkend ist anzumerken, dass ange-
+sichts der begrenzten Teilnehmerzahl und 
+Gesprächszeit kein umfassend repräsenta-
+tives Bild gezeichnet werden konnte. Auch 
+Gruppendynamiken und Selbstselektions-
+effekte bei der Teilnahme können die 
+Ergebnisse beeinflussen. Dennoch liefert die 
+Auswertung wertvolle Ansatzpunkte für die 
+weitere Auseinandersetzung mit dem Thema 
+„Große Sprachmodelle in der öffentlichen 
+Verwaltung“.
+2. Aufbau und Methodik
+9
+Die Diskussionsergebnisse werden im 
+Folgenden anhand der drei Themenblöcke 
+„Anwendung großer Sprachmodelle“, „Infra-
+struktur“ und „Regulierung“ zusammen-
+gefasst. Der Schwerpunkt liegt dabei auf 
+jenen Aspekten, denen die Teilnehmer 
+eine besonders hohe Bedeutung beimaßen. 
+Diese Bedeutung ergibt sich zum einen aus 
+der besonderen Betonung in den einzel-
+nen Redebeiträgen, zum anderen aus den 
+häufigen Bezügen auf Aussagen anderer 
+Teilnehmer, sowohl im Konsens als auch 
+im Dissens. Durch die Hervorhebung dieser 
+Punkte soll ein Fokus auf die wichtigsten 
+Erkenntnisse und die vielfältigen Perspek-
+tiven der Diskussion gelegt werden. Zudem 
+werden auch kontroverse Standpunkte und 
+unterschiedliche Sichtweisen beleuchtet, die 
+während des Austauschs zutage traten. Diese 
+Darstellung zielt darauf ab, ein umfassendes 
+Bild der Diskussion zu vermitteln und eine 
+fundierte Grundlage für die weitere Aus-
+einandersetzung mit der Integration großer 
+Sprachmodelle in die öffentliche Verwaltung 
+zu schaffen.
+3.1. Anwendung großer 
+Sprachmodelle
+Die Experten sehen ein breites Spektrum 
+an Anwendungsmöglichkeiten für große 
+Sprachmodelle in der öffentlichen Ver-
+waltung. Erwähnt wurden Pilotprojekte wie 
+Projekt F13, ein Verwaltungsassistenzsystem 
+im Staatsministerium Baden-Württemberg 
+und Projekte und Initiativen im Bundes-
+ministerium für wirtschaftliche Zusammen-
+arbeit (BMZ) und im Bundesministerium der 
+Justiz und für Verbraucherschutz (BMJV), 
+sowie Pilotprojekte in den Landes- und 
+Senatsverwaltungen von Niedersachsen 
+und Hamburg. Allgemeiner wurden Felder 
+identifiziert, in denen der Einsatz großer 
+Sprachmodelle zu Effizienzsteigerungen, 
+besseren Dienstleistungen für Bürger und 
+neuen Fähigkeiten führen können. Dazu 
+zählen unter anderem:
+3. Zentrale Aussagen als Ausgangspunkt für 
+Diskussion und Entwicklung
+10
+Generative KI als „Superwerkzeug“ 
+für die Verwaltung
+Die Experten sehen generative KI primär 
+als leistungsfähige Assistenzsysteme, die 
+Verwaltungsmitarbeiter von repetitiven 
+Aufgaben entlasten und so Freiräume für 
+wertschöpfende Tätigkeiten schaffen. Ziel 
+ist nicht der Ersatz menschlicher Expertise, 
+sondern deren gezielte Unterstützung. Um 
+in Verwaltungskontexten einsetzbar zu 
+sein, müssen die Sprachmodelle jedoch ein 
+gewisses Verständnis für spezifische Begriffe 
+und Abläufe entwickeln, z.B. im juristischen 
+Bereich. Dies kann durch Finetuning, 
+Prompting oder andere Anpassungen 
+erreicht werden. Langfristig sollen KI-Assis-
+tenten auf allen Ebenen der Verwaltung zum 
+Einsatz kommen - von der Führungsebene 
+über die Sachbearbeitung bis hin zu Bürger-
+services. So können Leistungen verbessert 
+und neue Angebote geschaffen werden, z.B. 
+eine 24/7-Erreichbarkeit. Auch in speziali-
+sierten Bereichen wie der Sicherheit oder 
+Stadtplanung kann generative KI wertvolle 
+Unterstützung bieten, etwa durch Objekt-
+erkennung in Videos oder die Erstellung 
+von Branchenkarten. Insgesamt wird eine 
+leistungsfähigere, bürgernähere und effizi-
+entere Verwaltung angestrebt.
+Spezialisierte Fachmodelle vs. gene-
+rische „Sprachtaschenrechner“
+Noch ist unklar, ob auch künftig ein auf-
+wändiges Finetuning der Sprachmodelle für 
+Verwaltungszwecke nötig sein wird oder ob 
+sich universelle „Sprachtaschenrechner“ 
+durchsetzen, die aus dem Stand vielseitig 
+einsetzbar sind. Einige Experten sehen 
+einen anhaltenden Bedarf für die Anpassung 
+der Modelle an spezifische Kontexte und 
+Anforderungen der Verwaltung. Andere 
+gehen davon aus, dass mit der rasanten 
+Weiterentwicklung der Basistechnologie 
+ein Finetuning immer seltener nötig sein 
+wird - auch aus Kostengründen. Einigkeit 
+besteht darin, dass die Modelle vor allem 
+Methodenwissen erwerben müssen, um Ver-
+waltungsabläufe zu verstehen. Die reine Ein-
+gabe von Verwaltungsdaten („Fachwissen“) 
+ist weniger entscheidend als das Erlernen 
+von Strukturen und Prozessen.
+Mit der steigenden Leistungsfähigkeit der 
+Sprachmodelle wird aber auch das Fine-
+tuning komplexer und aufwändiger. Lang-
+fristig könnten sich generische „Sprach-
+taschenrechner“ durchsetzen, die quer 
+über Anwendungsfälle und Anbieter hinweg 
+sehr ähnliche Ergebnisse liefern. Insgesamt 
+zeichnet sich ein Trend zu universellen, 
+PROMPT
+AI
+Abbildung 1: Illustration des Begriffs „Sprachtaschen-
+rechner“, der während des Roundtable mehrfach aufkam
+Tabelle 2: Anwendungsbeispiele von künstlicher Intelligenz in der Verwaltung, die während des Roundtable zur Sprache 
+kamen
+11
+ohne großen Konfigurationsbedarf einsetz-
+baren Sprachmodellen ab. Dennoch wird es 
+auch künftig Raum für spezialisierte Modelle 
+in Nischenbereichen geben. Die Verwaltung 
+muss hier die Balance finden.
+Potentiale in der Verwaltung
+Bereits in einer frühen Phase der Anwendung 
+zeigen sich die Potentiale der Techno-
+logie. So können Effizienzgewinne erzielt 
+werden, zum Beispiel in der massenhaften 
+Bearbeitung von Anträgen oder Wider-
+sprüchen. Dabei handelt es sich vor allem 
+um Assistenztätigkeiten. Entsprechend bie-
+ten sich große Sprachmodelle in den Augen 
+der Hersteller vor allem dazu an, als außer-
+ordentlich leistungsfähige Assistenzsysteme 
+zu fungieren. Laut ihrer Aussage geht es 
+dabei nicht darum, menschliche Experten zu 
+ersetzen, sondern sie durch Software zu ent-
+lasten. Es geht darum, Tätigkeiten, die nicht 
+zur Wertschöpfung beitragen, auszulagern 
+und gleichzeitig die Effizienz der Maschi-
+nen zu nutzen. In der Verwaltung bedeutet 
+dies aber auch mit sprachlichen Spezifika 
+umgehen zu können und beispielsweise 
+juristische Begriffe oder Wendungen korrekt 
+zu interpretieren. Dieses Verständnis kann 
+den Assistenzsystemen zu einem gewissen 
+Grad vermittelt werden, erfordert aber 
+nach Ansicht einiger Experten Alignment, 
+Finetuning oder spezifisch konstruierte 
+Prompts, die entsprechende Nuancen oder 
+Anforderungen direkt mitliefern. Welche Art 
+von Anpassung der KI erfolgen muss hängt 
+dabei auch von deren genauer Verwendung 
+ab. Solche Assistenten sollen zukünftig über-
+all in der Verwaltung einen Platz haben. Ihre 
+Fähigkeiten sollen Führungs- wie Sachbe-
+arbeiterebenen und auch den Bürgern zur 
+Verfügung stehen. 
+Dadurch können dann auch Leistungen 
+angeboten werden, die bisher nicht möglich 
+waren, wie eine durchgehende Beratung 
+via Chatbot oder Simultanübersetzung in 
+der Breite. Darüber hinaus gibt es Effekte 
+die eher in Nischenbereichen relevant sind. 
+So kann beispielsweise die Verwendung 
+von Bewegungs-/Objekterkennung Sicher-
+heitsbehörden bei der Auswertung von 
+Videomaterial unterstützen oder eine 
+Überwachung von Brennpunkten ohne 
+Videoaufzeichnung ermöglichen und damit 
+den Behörden, im Rahmen ihrer Verhältnis-
+mäßigkeitsentscheidungen ein milderes 
+Mittel an die Hand gegeben werden. Die 
+Verwaltung kann dadurch besser, schneller, 
+zugänglicher, effizienter und effektiver 
+handeln.
+Finegetunte Spezialisten oder der 
+große Sprachtaschenrechner?
+Eine Frage zur Entwicklung und zur Archi-
+tektur von großen Sprachmodellen ist, ob 
+Finetuning weiterhin eine unerlässliche 
+Komponente bleiben wird oder, ob sich 
+mächtige und universelle Modelle durch-
+setzen, deren Größe ein Finetuning unnötig 
+macht.
+Ein Teil der Wirtschaftsvertreter äußerte 
+sich dahingehend, dass Finetuning heute 
+noch regelmäßig notwendig und gefragt 
+ist und deshalb Beratungsbedarf besteht. 
+Eine Mehrzahl der Teilnehmer erwartet 
+jedoch, dass das nachträgliche Training 
+der großen Sprachmodelle abnehmen wird. 
+Große Sprachmodelle kommen immer 
+häufiger ohne die Zuführung weiterer Daten 
+und Parameter aus und benötigen dieses 
+Finetuning, das z.B. die Wiedererkennung 
+Abbildung 2: Darstellung unterschiedlicher Zielgruppen, 
+für die Verwaltungsassistenzsysteme in Frage kommen
+12
+von Strukturen in Gesetzestexten oder die 
+(Re-)Produktion verwaltungsspezifischer 
+Inhalte ermöglicht, immer seltener. Dabei 
+spielen auch Kosten eine Rolle. Diese steigen 
+je nach Größe des Modells sprunghaft an 
+und wirken sich dementsprechend auf die 
+Rentabilität aus. 
+Die Experten waren sich nicht einig, in 
+welchem Ausmaß Finetuning in Zukunft 
+noch benötigt wird. Es wurden Ansichten 
+formuliert, nach denen Finetuning durch-
+aus eine langfristige Konstante sein wird, 
+weil es immer wieder kontextbezogene 
+Anforderungen an die Modelle geben wird, 
+denen diese nicht ohne weiteres Training 
+gerecht werden könnten. Andere Stimmen 
+gehen von einem baldigen Ende regel-
+mäßigen Finetunings aus, schlicht aufgrund 
+der Fähigkeiten neuer Versionen großer 
+Sprachmodelle. „Methode“ sei das, was 
+den Sprachmodellen beigebracht werden 
+muss. Damit war durchaus Finetuning 
+gemeint aber in einem sehr spezifischen 
+Rahmen. Die Methode sei entscheidend 
+und damit wesentlich wichtiger als „Fach-
+wissen“, womit lediglich das Zuführen von 
+beispielsweise organisationsspezifischen 
+Daten gemeint ist. Einigkeit bestand darin, 
+dass mit den steigenden Fähigkeiten der 
+Modelle das Finetuning zunehmend kom-
+plexer wird. Deshalb wurde mehrfach ein 
+universeller „Sprachtaschenrechner“ als 
+Metapher verwandt, also eine Maschine, die 
+gleiche Anforderungen wiederkehrend und 
+sehr präzise erfüllt. Nach dieser Projektion 
+könnte es bald der Fall sein, dass die Modelle 
+verschiedener Anbieter in Zukunft beinahe 
+identisch sein werden. 
+3.2. Infrastruktur
+Um große Sprachmodelle in der öffentlichen 
+Verwaltung effektiv einsetzen zu können, 
+bedarf es einer umfassenden Infrastruktur. 
+Dabei geht es nicht nur um die technische 
+Ausstattung, sondern auch um den orga-
+nisatorischen, rechtlichen, sozialen und 
+wirtschaftlichen Unterbau. Es müssen Fra-
+gen geklärt werden, wie beispielsweise: 
+•	 Auf welchen Systemen laufen die 
+Modelle? 
+•	 Wer kann sie implementieren und die 
+begleitenden Dienstleistungen anbieten? 
+•	 Wie können diese Dienste in die 
+bestehende IT-Landschaft der Vewaltung 
+integriert werden? 
+•	 Welche Technologien bieten welche 
+Vorteile?
+Das Servicemodell für die Verwaltung
+Die Teilnehmer des Roundtables waren sich 
+einig, dass bei der Wahl der Servicemodelle 
+für eine Sprachmodell-Infrastruktur sowohl 
+On-premise Lösungen als auch cloudbasierte 
+Lösungen eine Rolle spielen werden. 
+                        			                 	
+Insbesondere bei sensiblen Daten der 
+öffentlichen Verwaltung sowie Themen 
+wie Sicherheit und Datenschutz wird es 
+immer wieder notwendig sein, sorgfältig 
+abzuwägen, um den technischen, organisa-
+torischen und politischen Anforderungen an 
+Abbildung 3: Illustration der unterschiedlichen Service-
+modelle, die in der Verwaltung zum Einsatz kommen 
+werden
+Der Sprachtaschenrechner ist 
+Metapher für eine Maschine, 
+die gleiche Anforderungen   
+wiederkehrend und sehr präzise 
+erfüllt.
+13
+ein System gerecht zu werden. Neben den 
+objektiven technologischen Gegebenheiten 
+kann auch die öffentliche Wahrnehmung ein 
+entscheidender Faktor sein. So gibt es teil-
+weise Vorbehalte gegenüber cloudbasierten 
+Lösungen, da diese überwiegend von US-
+amerikanischen Technologiekonzernen 
+betrieben werden. Letztendlich sind jedoch 
+Leistung und Kosten die zentralen Faktoren, 
+die bei der Entscheidung für ein Service-
+modell berücksichtigt werden müssen. Ein 
+Teilnehmer brachte es auf den Punkt: „Was 
+kann das System und kann ich es mir 
+leisten?“ 
+Bedeutung der Implementierungs-
+leistung
+Die Kosten und Leistung eines Sprach-
+modells hängen stark vom jeweiligen 
+Anbieter ab. Dabei spielt die Frage nach dem 
+„richtigen“ Modell eine eher untergeordnete 
+Rolle. Vielmehr ist die Implementierungs-
+leistung oft der entscheidende Faktor für 
+eine erfolgreiche Umsetzung. Dement-
+sprechend ist die Wahl zwischen proprie-
+tären Systemen und deren Anbietern sowie 
+Open Source Lösungen und deren Anbietern 
+nur teilweise eine Frage der Technologie. 
+Da sich die Qualität großer Sprachmodelle 
+immer weiter annähert, wird die Wahl des 
+Anbieters oder des Modells zunehmend 
+von der Verfügbarkeit der Hardware und 
+des zuverlässigen Betriebs abhängen. Ins-
+besondere die Verhandlungen mit großen 
+Cloudanbietern über Sonderwege für die 
+öffentliche Verwaltung gestalten sich nicht 
+immer einfach. Hier bieten sich Potenziale 
+für spezialisierte Anbieter, die besser auf die 
+spezifischen Anforderungen der deutschen 
+Verwaltung eingehen können und wollen.
+Herausforderungen bei Lizenzformen 
+und Anbietern
+Fragen zu Lizenzformen, KI-Anbietern und 
+Implementierungsdienstleistern stellen 
+die öffentliche Verwaltung vor Heraus-
+forderungen. Verschiedene Modelle von 
+Cloud Service Portalen für die Verwaltung 
+sind denkbar und teilweise bereits in der 
+Umsetzung begriffen. Über diese Portale 
+können Parameter wie Schutzbedarfe 
+oder gegebenenfalls die Zertifizierung 
+bestimmter Dienstleistungen, Sprach-
+modelle oder Anbieter abgewickelt oder 
+zumindest unterstützt werden. Dies 
+erleichtert auch die gemeinsame Nutzung 
+vorhandener Infrastrukturen. Letzteres ist 
+ein zentrales Anliegen der meisten Experten: 
+Durch die Teilung existierender Strukturen 
+und Ressourcen soll vermieden werden, dass 
+die öffentliche Verwaltung immer wieder mit 
+der anfänglichen Trägheit von Beschaffung 
+und Projektierung konfrontiert wird.
+Open Source 
+Open Source Lösungen werden, ins-
+besondere auch in der Wissenschaft, häufig 
+mit Wohlwollen betrachtet, da sie die 
+Abhängigkeiten von großen Technologie-
+konzernen verringern. Dabei können Open 
+Source Lösungen kostengünstige Alter-
+nativen und ein transparenteres Umfeld für 
+Prüfinstanzen bieten. Im Bereich der großen 
+Sprachmodelle kam einer der größten 
+Fortschritte der Open Source Community 
+dadurch zustande, dass der Konzern Meta 
+sein Llama-2 Sprachmodell zum Teil geöffnet 
+hat.
+Dabei muss genau beobachtet werden, wel-
+che Teile ihrer Innovationen die Anbieter 
+unter welchem Lizenzmodell veröffent-
+lichen. Davon hängt ab, inwieweit sich 
+Strukturen weiter verfestigen, die eigentlich 
+nicht gewollt sind. Hinzu kommt der Faktor, 
+dass manche Unternehmen sich von der 
+Veröffentlichung scheinbar freier und offe-
+ner Technologien eine verbesserte Außen-
+wirkung versprechen. Unabhängig von 
+Imagefragen oder Marketingvorstößen muss 
+auch verstanden werden, dass Open Source 
+Lösungen mitunter nur eingeschränkt Unter-
+Da sich die Qualität großer 
+Sprachmodelle immer weiter 
+annähert, wird die Wahl des An-
+bieters oder des Modells zuneh-
+mend von der Verfügbarkeit der 
+Hardware und des zuverlässigen 
+Betriebs abhängen.
+14
+stützung durch ihre Entwickler erfahren und 
+auch Haftungsfragen bei Softwarefehlern 
+nicht immer abschließend geklärt sind. 
+Unter dem Strich bleiben für die öffentliche 
+Verwaltung viele Fragen offen, in Bezug zu 
+Open Source Sprachmodellen. Was allerdings 
+sehr klar aus der Diskussion hervorging, war 
+die Annahme, dass der Markt insgesamt 
+von den Open Source Angeboten profitiert 
+und diese einen positiven Einfluss auf die 
+Entwicklungsgeschwindigkeit, Transparenz 
+und Kosten nehmen.
+3.3. Regulierung
+Als drittes Thema behandelte die Gruppe 
+die Regulierung von großen Sprach-
+modellen. Dabei wurden Auswirkungen von 
+bestehender Regulierung auf die Anwend-
+barkeit von KI ebenso diskutiert wie die 
+Herausforderungen die durch große Sprach-
+modelle auf die Gesetzgeber zukommen.
+Die Erforderlichkeit der  
+Nachvollziehbarkeit
+Die Erforderlichkeit der Nachvollziehbar-
+keit von KI-Entscheidungen wurde während 
+des Roundtables kontrovers diskutiert. Als 
+Beispiele für regulatorische Vorgaben zur 
+Nachvollziehbarkeit wurden die Rechen-
+schaftspflichten aus der Datenschutzgrund-
+verordnung sowie die Grundrechtsrelevanz 
+des Verfahrens, insbesondere in Bezug auf 
+Verwaltungsentscheidungen, angeführt. Es 
+gab sowohl Vertreter, die die Meinung ver-
+traten, dass jede Entscheidung unbedingt 
+und vollständig nachvollziehbar sein muss, 
+um rechtlichen Anforderungen gerecht zu 
+werden, als auch Experten, die es für sinn-
+voller erachteten, lediglich das Ergebnis einer 
+Entscheidung und die zugrundeliegenden 
+Daten offenzulegen, da auch menschliche 
+Entscheidungsträger nicht immer alle ihre 
+Entscheidungsprozesse im Detail erläutern 
+können. Bei Vertretern letzterer Ansicht 
+ist anzunehmen, dass sie eine Änderung 
+der rechtlichen Rahmenbedingungen 
+befürworten würden, um ihr präferiertes 
+Vorgehen zu ermöglichen. Darüber hinaus 
+wurde die Idee geäußert, die KI nicht selbst 
+Entscheidungen treffen und diese dann 
+erläutern zu lassen, sondern mithilfe der 
+Sprachmodelle Entscheidungsbäume zu 
+erstellen, mit deren Hilfe Entscheidungen 
+nachvollziehbar dargestellt werden könnten. 
+Das bedeutet, dass auch für diese Frage-
+stellung die zuvor angesprochene Assistenz-
+funktion einen Mehrwert schaffen könnte.
+Problematik der Entscheidungsauto-
+matisierung
+Über die reinen Assistenzfunktionen hinaus 
+können große Sprachmodelle auch für die 
+Bereiche der Entscheidungsvorbereitung 
+oder sogar der Entscheidungsauto-
+matisierung herangezogen werden. Dabei 
+kann es zu Herausforderungen kommen, die 
+in der KI-Forschung bereits seit langer Zeit 
+diskutiert werden. Manche dieser ethischen 
+und moralischen Probleme müssen als 
+höchstpersönliche Wertentscheidungen ver-
+standen werden. Als Beispiele können hier 
+das Trolley-Problem, die Entscheidung zwi-
+schen Leben und Tod einer alten Person oder 
+eines Kindes, der Abschuss eines von Terro-
+risten entführten Flugzeugs und ähnliche 
+spieltheoretische Erwägungen angeführt 
+werden. Kann eine Maschine persönliche 
+Wertentscheidungen treffen? Wer trägt die 
+Verantwortung und wie sind die Haftungs-
+folgen geregelt?
+In den letzten Jahren hat sich bereits 
+herauskristallisiert, dass eine mögliche 
+künftige Regulierung von durch Maschinen 
+getroffenen Entscheidungen von der Legisla-
+tive nur mit großer Umsicht angegangen wird. 
+Das spiegelt sich zum Beispiel im Recht wider, 
+automatisierten Entscheidungsfindungen 
+im Einzelfall widersprechen zu können 
+(Art.  22 Abs. 1 DSGVO). Ähnliche Vorgaben 
+finden sich im neuen EU-KI-Gesetz. Das 
+bringt natürlich Herausforderungen für die 
+Implementierung solcher Entscheidungs-
+systeme in der öffentlichen Verwaltung 
+mit sich. Ein risikobasiertes Vorgehen, bei 
+dem einzelne rechtliche Vorgaben zunächst 
+außen vor gelassen werden, ist nur schwer 
+vorstellbar. Dazu bleiben die beschriebenen 
+Grundsatzfragen bestehen.
+15
+Alignment als Gestaltungsmöglich-
+keit und Werkzeug
+Die Frage, wie große Sprachmodelle an die 
+eigenen Bedürfnisse und Wertvorstellungen 
+angepasst werden können, wird derzeit 
+intensiv diskutiert. Ein vielversprechender 
+Ansatz ist das sogenannte Alignment - die 
+Ausrichtung von KI-Systemen auf mensch-
+liche Werte und Ziele, um unerwünschtes 
+oder schädliches Verhalten zu vermeiden. 
+Dies erfordert die sorgfältige Gestaltung 
+von Anreizsystemen, Regelwerken und 
+Überwachungsmechanismen, um die 
+gewünschte Ausrichtung sicherzustellen 
+und Abweichungen zu minimieren oder ganz 
+auszuschließen.
+In der Diskussion wurde deutlich, dass 
+die öffentliche Verwaltung von einer 
+zentralisierten Steuerung dieser Align-
+ment-Prozesse profitieren könnte. Dadurch 
+müssten nicht alle Ämter und Behörden bei 
+jedem neuen Einsatz großer Sprachmodelle 
+erneut entscheiden, wie das Alignment 
+für eine KI auszugestalten ist, die in der 
+deutschen Verwaltung zum Einsatz kommt. 
+Entscheidend für den Erfolg wird es sein, die 
+dafür erforderlichen Kompetenzen in Politik, 
+Ämtern und Behörden zu verankern.
+Je nachdem, wie die Systeme im Zuge des 
+Alignments angepasst werden, müssen die 
+Auswirkungen von Änderungen umfassend 
+untersucht werden. Werden beispielsweise 
+Gesetze angepasst oder ändert sich die Inter-
+pretation bestimmter Vorgänge, so muss das 
+System entsprechend nachjustiert werden. 
+Dabei kann es zu unerwünschten Neben-
+effekten kommen. Deshalb ist es unerläss-
+lich, Anpassungen der Sprachmodelle über 
+ihren gesamten Lebenszyklus hinweg eng zu 
+begleiten und stets gründlich zu testen.
+Kulturwandel von Risikovermeidung 
+zu Partizipation
+Mehrere Teilnehmer äußerten sich kritisch 
+über die „risikoaverse Kultur“ in Deutsch-
+land, die dazu führe, dass die KI-Entwicklung 
+und -Implementierung schnell an ihre Gren-
+zen stoße. Um dem entgegenzuwirken, seien 
+partizipative Leuchtturmprojekte, Realla-
+bore sowie eine breite Kommunikation und 
+Diskussion hilfreich, um Verständnis und 
+Akzeptanz zu schaffen.
+Derzeit sei es eine Herausforderung, 
+bestehende Verwaltungsprozesse, die Vor-
+stellungen der verschiedenen Stakeholder 
+- insbesondere in Bezug auf Rechtssicherheit 
+einerseits und Nutzerfreundlichkeit anderer-
+seits - mit KI-Implementierungsprojekten 
+in Einklang zu bringen. Die Maßstäbe, die 
+dabei von der Verwaltung an KI-Systeme 
+angelegt werden, gehen regelmäßig über die 
+Anforderungen an menschliche Mitarbeiter 
+hinaus.
+Partizipation bietet sich als Schlüssel für 
+die Akzeptanz von Lösungen an. Erste 
+Implementierungsprojekte, an denen 
+diverse Stakeholdergruppen beteiligt waren, 
+erreichten zumindest, dass sie nicht von 
+vornherein abgelehnt wurden. Diese Art 
+des Umgangs mit neuen Technologien und 
+der Einbindung von Bürgern stelle für die 
+öffentliche Verwaltung eine Veränderung 
+ihrer „DNA“ dar - weg von einer Kultur der 
+Risikovermeidung hin zu mehr Offenheit, 
+Experimentierfreude und Kollaboration.
+16
+Trotz der vielfältigen Erfahrungen der 
+Diskussionsteilnehmer steht der Einsatz 
+großer Sprachmodelle in der öffentlichen 
+Verwaltung noch am Anfang. Während man 
+sich schnell in kleinen Detaildiskussionen 
+wiederfindet, bleiben viele grundsätzliche 
+Fragen, beispielsweise nach Verantwort-
+lichkeiten oder der Nachvollziehbarkeit 
+von Entscheidungen, noch unbeantwortet. 
+Gleichzeitig schreitet die Technologie mit 
+großen Schritten voran und die EU steckt mit 
+dem KI-Gesetz die Grenzen des regulatorisch 
+Möglichen neu ab.
+Innerhalb der Diskussionsrunde zeigte 
+sich bereits ein breites Spektrum an Mei-
+nungen und Vorstellungen, obwohl dabei 
+nur ein Bruchteil der möglichen Stake-
+holder vertreten war. Am Ende stand der 
+Hinweis auf den nötigen Kulturwandel in 
+der öffentlichen Verwaltung, und dabei 
+herrschte relative Einigkeit: Es braucht 
+weitere Implementierungsprojekte, die den 
+Menschen Vorbehalte und Ängste nehmen 
+und gleichzeitig unter Beweis stellen, 
+dass die großen Sprachmodelle sowohl 
+eine Bereicherung darstellen als auch den 
+Ansprüchen der Menschen, die mit ihnen 
+interagieren, gerecht werden können.
+Der Themenkomplex bietet vielfältige 
+Möglichkeiten für Forschung, Diskussion, 
+Partizipation und Innovation. Dabei ist 
+es durchaus möglich, sich nicht nur über 
+die großen Sprachmodelle, sondern auch 
+mit ihnen auszutauschen. Mit den immer 
+leistungsfähigeren Modellen erhalten auch 
+diejenigen, die sich mit dieser Technologie 
+auseinandersetzen, ein Werkzeug an die 
+Hand, das wertvolle Unterstützung bieten 
+kann - immer unter der Voraussetzung, 
+dass man sich mit den Fähigkeiten, Heraus-
+forderungen und Limitierungen der Sys-
+teme befasst und ihre Ergebnisse mit der 
+gebotenen Sorgfalt und Transparenz in die 
+eigene Arbeit einbindet.
+Die Rückschau zeigt eine kontinuier-
+liche Verbesserung der Modelle und Ver-
+schiebungen in der Akteurslandschaft: 
+Während sich etablierte Unternehmen 
+wie Aleph Alpha auf die Implementierung 
+fokussieren, treten mit DeepSeek und xAI 
+neue Entwickler in den Markt ein. Zwei 
+zentrale Trends prägen die Entwicklung: 
+Die zunehmende Multimodalität ermöglicht 
+die Verarbeitung verschiedener Medien-
+formate, während spezialisierte KI-Agenten 
+Sprachmodelle mit anderen Funktionen 
+für definierte Anwendungsfälle verbinden. 
+Neben technologischen Herausforderungen 
+wie „Halluzinationen“ werden sich viele 
+Chancen und Risiken erst in der praktischen 
+Umsetzung zeigen - die Nutzung generativer 
+KI stellt für die Verwaltung eine Innovations-
+aufgabe dar. Für die öffentliche Verwaltung 
+wird ein partizipativer Ansatz empfohlen: 
+Ko-kreative Projekte helfen auszuloten, wo 
+der Einsatz generativer KI sinnvoll ist. Schu-
+lungen im „Prompt Engineering“ können 
+Verwaltungsmitarbeiter befähigen, eigen-
+ständig Anwendungsideen zu entwickeln 
+- dies ermöglicht dezentrale Innovation bei 
+gebotener Sorgfalt.
+4. Große Sprachmodelle – Chancen, Heraus-
+forderungen, Diskussionen
+Es braucht weitere  
+Implementierungsprojekte, die  
+den Menschen Vorbehalte und  
+Ängste nehmen...
+17
+Berichtsverzeichnis
+Beauftragter der Bundesregierung für 
+Informationstechnik „Künstliche Intelligenz 
+in der Verwaltung“ Online verfügbar unter: 
+https://www.cio.bund.de/Webs/CIO/DE/digi-
+tale-loesungen/datenpolitik/daten-und-ki/
+daten-und-ki-node.html.
+Albrecht, Steffen (2023): ChatGPT und andere 
+Computermodelle zur Sprachverarbeitung – 
+Grundlagen, Anwendungs- potenziale und 
+mögliche Auswirkungen. Online verfügbar 
+unter: https://www.bundestag.de/resource/
+blob/944148/30b0896f6e49908155fcd01d
+77f57922/20-18-109-Hintergrundpapier-
+data.pdf.
+Bundesamt für Sicherheit und Informations-
+technik „Große KI-Sprachmodelle: Chancen 
+und Risiken für Industrie und Behörden“ 
+Online ursprünglich verfügbar unter: https://
+www.bsi.bund.de/SharedDocs/Downloads/
+DE/BSI/KI/Grosse_KI_Sprachmodelle.
+pdf?__blob=publicationFile&v=2.
+Aktualisierte Version verfügbar unter: 
+https://www.bsi.bund.de/SharedDocs/Down-
+loads/DE/BSI/KI/Generative_KI-Modelle.
+html.
+Bundesregierung „Fortschritt durch 
+Datennutzung“ - Kapitel 3.1.3. Online 
+verfügbar unter: https://www.bmi.bund.
+de/SharedDocs/downloads/DE/veroef-
+f e n t l i c h u n g e n / 2 0 2 3 /d a t e n s t r a t e g i e.
+pdf?__blob=publicationFile&v=3.
+Bundesregierung: Nationale Strategie 
+für KI (Ziel 7: KI für hoheitliche Aufgaben 
+nutzen und Kompetenzen der Verwaltung 
+anpassen). Online verfügbar unter: https://
+www.ki-strategie-deutschland.de/home.
+html.
+Council of the European Union „ChatGPT 
+in the Public Sector – overhyped or over-
+looked?“. Online verfügbar unter: https://
+www.consilium.europa.eu/media/63818/art-
+paper-chatgpt-in-the-public-sector-overhy-
+ped-or-overlooked-24-april-2023_ext.pdf.
+Jin, Zhijing ; Mihalcea, Rada. Handbook of 
+Computational Social Science for Policy. 
+2023. Kapitel 7, S. 141 – 162. Online verfüg-
+bar unter: https://arxiv.org/pdf/2302.03490.
+pdf.
+Informations Technik Zentrum Bund „KI 
+auch in der Bundesverwaltung gefragt“. 
+Online verfügbar unter: https://www.itzbund.
+de/DE/digitalemission/trendstechnologien/
+kuenstlicheintelligenz/kuenstlicheintelli-
+genz.html.
+KI in der öffentlichen Verwaltung Baden-
+Württemberg. Online verfügbar unter: 
+https://www.baden-wuerttemberg.de/de/
+ser vice/alle-meldungen/meldung /pid/
+kuenstliche-intelligenz-in-der-verwaltung.
+18
+Literaturverzeichnis
+Barman, Kristian González; Wood, Nathan; 
+Pawlowski, Pawel (2024): Beyond trans-
+parency and explainability. on the need for 
+adequate and contextualized user guidelines 
+for LLM use. In: Ethics Info Tech 26 (3), S. 
+1–12. DOI: 10.1007/s10676-024-09778-2.
+Beltran, Marco Antonio; Ruiz Mondragon, 
+Marina Ivette; Han, Seung Hun (2024): 
+Comparative Analysis of Generative AI Risks 
+in the Public Sector. In: Hsin-Chung Liao, 
+David Duenas Cid, Marie Anne Macadar und 
+Flavia Bernardini (Hg.): Proceedings of the 
+25th Annual International Conference on 
+Digital Government Research. Unter Mit-
+arbeit von Hsin-Chung Liao, David Duenas 
+Cid, Marie Anne Macadar und Flavia Bernar-
+dini. dg.o 2024: 25th Annual International 
+Conference on Digital Government Research. 
+Taipei Taiwan, 11.06.2024-14.06.2024. 
+Erscheinungsort nicht ermittelbar: Associa-
+tion for Computing Machinery (ACM Digital 
+Library), S. 610–617.
+Bevara, Ravi Varma Kumar; Mannuru, 
+Nishith Reddy; Karedla, Sai Pranathi; Xiao, 
+Ting (2024): Scaling Implicit Bias Analysis 
+across Transformer-Based Language Models 
+through Embedding Association Test and 
+Prompt Engineering. In: Applied Sciences 14 
+(8), S. 1–31. DOI: 10.3390/app14083483.
+Bright, Jonathan; Enock, Florence; 
+Esnaashari, Saba; Francis, John; Hashem, 
+Youmna; Morgan, Deborah (2024): Gene-
+rative AI is already widespread in the public 
+sector: evidence from a survey of UK public 
+sector professionals. In: Digit Gov: Res Pract. 
+DOI: 10.1145/3700140.
+Cambria, Erik; Malandri, Lorenzo; Merco-
+rio, Fabio; Nobani, Navid; Seveso, Andrea 
+(2024): XAI meets LLMs: A Survey of the 
+Relation between Explainable AI and Large 
+Language Models. A Survey of the Relation 
+between Explainable AI and Large Language 
+Models. Online verfügbar unter http://arxiv.
+org/pdf/2407.15248v1.
+David, Geneviève (2024): Artificial Intel-
+ligence. Opportunities and Challenges for 
+Public Administration. In: Canadian Public 
+Administration 67 (3), S. 388–406. DOI: 
+10.1111/capa.12580.
+Fang, Xiao; Che, Shangkun; Mao, Minjia; 
+Zhang, Hongzhe; Zhao, Ming; Zhao, Xiao-
+hang (2023): Bias of AI-Generated Content: 
+An Examination of News Produced by Large 
+Language Models. Online verfügbar unter 
+http://arxiv.org/pdf/2309.09825v2.
+Ghosh, Sourojit; Caliskan, Aylin (2023): 
+ChatGPT Perpetuates Gender Bias in 
+Machine Translation and Ignores Non-Gen-
+dered Pronouns: Findings across Bengali 
+and Five other Low-Resource Languages. 
+In: Francesca Rossi, Sanmay Das, Jenny 
+Davis, Kay Firth-Butterfield und Alex John 
+(Hg.): Proceedings of the 2023 AAAI/ACM 
+Conference on AI, Ethics, and Society. AIES 
+‘23: AAAI/ACM Conference on AI, Ethics, 
+and Society. Montreal QC Canada, 08 08 
+2023 10 08 2023. New York, NY, USA: ACM, 
+S. 901–912. Online verfügbar unter https://
+dl.acm.org/doi/10.1145/3600211.3604672.
+Gupta, Maanak; Akiri, Charankumar; 
+Aryal, Kshitiz; Parker, Eli; Praharaj, Lopa-
+mudra (2023): From ChatGPT to ThreatGPT. 
+Impact of Generative AI in Cybersecurity and 
+Privacy. In: IEEE Access 11, S. 80218–80245. 
+DOI: 10.1109/ACCESS.2023.3300381.
+Myers, Devon; Mohawesh, Rami; Chella-
+boina, Venkata Ishwarya; Sathvik, Anantha 
+Lakshmi; Venkatesh, Praveen; Ho, Yi-Hui 
+et al. (2023): Foundation and large language 
+models: fundamentals, challenges, opportu-
+nities, and social impacts. In: Cluster Com-
+put. DOI: 10.1007/s10586-023-04203-7.
+Niari, Maria (2024): Policy Strategies for 
+Training Public Sector Executives to Develop 
+Artificial Intelligence Skills. In: jpentai 3 (1), 
+e36596. DOI: 10.12681/jpentai.36596.
+Salah, Mohammed; Abdelfattah, Fadi; 
+Al Halbusi, Hussan (2023): Generative 
+Artificial Intelligence (ChatGPT & Bard) 
+in Public Administration Research: A 
+Double-Edged Sword for Street-Level Bure-
+Prof. Dr. Christian Djeffal
+Christian Djeffal ist Assistant Professor 
+für Law, Science and Technology an der 
+Technischen Universität München. An der 
+TUM School of Social Sciences and Techno-
+logy beschäftigt er sich mit dem Verhältnis 
+von Recht und Technologie und arbeitet 
+schwerpunktmäßig zu neuen Technologien 
+wie künstlicher Intelligenz und dem Internet 
+der Dinge. Zuvor war Christian Djeffal Leiter 
+des Forschungsbereichs „Globaler Konstitu-
+tionalismus und das Internet“ am Alexan-
+der-von-Humboldt-Institut für Internet und 
+Gesellschaft. Er wurde an der Humboldt-Uni-
+versität im Völkerrecht zum Thema „Static 
+and evolutive treaty interpretation: a func-
+tional reconstruction“ promoviert. Rechts-
+wissenschaften studierte Christian Djeffal 
+an der Ludwig-Maximilians-Universität 
+München und am University College London. 
+Forschungsaufenthalte führten ihn u.a. ans 
+Amsterdam Center for International Law, 
+ans Lauterpacht Centre for International Law 
+der University of Cambridge und ans Max-
+Planck-Institut für Ausländisches öffentli-
+ches Recht und Völkerrecht in Heidelberg. 
+Seit 2019 ist er Vorstandsmitglied des NEGZ 
+· Kompetenznetzwerk Digitale Verwaltung.
+Philipp Mehl LL.M.
+Philipp Mehl ist Doktorand und wissen-
+schaftlicher Mitarbeiter an der Professur für 
+Law, Science and Technology. Er forscht zu 
+den Zusammenhängen von Sicherheit, Recht 
+und Gesellschaft. Philipp Mehl war als Risiko-
+manager im Finanzdienstleistungsbereich, 
+sowie als Berater für Informationssicher-
+heit und Datenschutz in einem Professional 
+Services Unternehmen tätig. Zuvor studierte 
+er Politikwissenschaft an der Ludwig-
+Maximilians-Universität München, sowie 
+Europäisches und Internationales Recht am 
+Europa-Institut der Universität des Saar-
+landes. Philipp Mehl ist zertifizierter Daten-
+schutzbeauftragter und IT Risk Practitioner.
+Über die Autoren
+aucracy Studies. In: International Journal 
+of Public Administration, S. 1–7. DOI: 
+10.1080/01900692.2023.2274801.
+Schneider, Johannes (2024): Explainable 
+Generative AI (GenXAI). a survey, concep-
+tualization, and research agenda. In: Artif 
+Intell Rev 57 (11), S. 289. DOI: 10.1007/
+s10462-024-10916-x.
+www.negz.org

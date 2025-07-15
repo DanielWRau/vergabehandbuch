@@ -1,5 +1,3 @@
-<!-- ==================== START OF BOOK ==================== -->
-
 # **Das Ende des Formulars: Wie Sprachmodelle die öffentliche Vergabe neu definieren**
 
 ## **Ein Praxisleitfaden für die Revolution im Beschaffungswesen**
@@ -23,8 +21,6 @@ Dieses Buch ersetzt nicht Ihre Kernkompetenzen – Ihr Fachwissen, Ihr Urteilsve
 Wir laden Sie ein, die Möglichkeiten zu entdecken, die sich ergeben, wenn menschliche Expertise und künstliche Intelligenz zusammenarbeiten. Willkommen in der Zukunft der Beschaffung.
 
 ---
-
-<!-- ==================== KAPITEL: Kapitel_01_Sprachmodelle_verstehen.md ==================== -->
 
 # **Kapitel 1: Ihr neuer Fachassistent – Was Sprachmodelle wirklich können**
 
@@ -190,10 +186,6 @@ Sprachmodelle haben nur ein begrenztes "Kurzzeitgedächtnis" (Kontextfenster). I
 *   **Schutzmaßnahme:** Fassen Sie in längeren Dialogen immer wieder den bisherigen Stand und die wichtigsten Anweisungen zusammen. Erledigen Sie komplexe Aufgaben in neuen, sauberen Chats. Beginnen Sie wichtige Prompts erneut mit der Zusammenfassung des relevanten Kontexts.
 
 Die Beherrschung dieser Risiken ist kein Hindernis, sondern ein zentraler Teil der professionellen Kompetenz im Umgang mit KI. Indem Sie die Stärken des Modells gezielt nutzen und seine Schwächen durch Ihre Expertise kompensieren, wird es zu einem unschätzbar wertvollen Werkzeug in Ihrem Vergabealltag.
-
-<!-- ==================== ENDE KAPITEL: Kapitel_01_Sprachmodelle_verstehen.==================== -->
-
-<!-- ==================== KAPITEL: Kapitel_02_Fortgeschrittene_Prompt_Techniken.md ==================== -->
 
 # **Kapitel 2: Fortgeschrittene Prompt-Techniken – Wie Sie Sprachmodelle zu Expertensystemen machen**
 
@@ -897,10 +889,6 @@ Der Weg von der Grundanwendung zur Meisterschaft erfordert Zeit und Übung. Aber
 
 *Dieses Kapitel basiert auf den neuesten Erkenntnissen der Prompt-Engineering-Forschung und berücksichtigt bewährte Praktiken aus der professionellen Softwareentwicklung. Es integriert Erfahrungen aus 180 Tagen täglicher AI-Pair-Programming-Praxis und Analyse von führenden KI-Systemen.*
 
-<!-- ==================== ENDE KAPITEL: Kapitel_02_Fortgeschrittene_Prompt_Techniken.md ==================== -->
-
-<!-- ==================== KAPITEL: Kapitel_03_Strategie_und_erste_Schritte.md ==================== -->
-
 # **Kapitel 3: Strategie und erste Schritte – Führen Sie KI sicher in Ihrer Vergabestelle ein**
 
 ## **Einleitung: Vom Wissen zum Handeln**
@@ -1033,10 +1021,6 @@ Der Aufbau von KI-Kompetenz erfordert keine teuren Zertifikatskurse. Er geschieh
 4.  **Fokus auf das "Warum":** Wenn ein Prompt nicht funktioniert, analysieren Sie kurz, warum. War die Rolle unklar? Fehlte der Kontext? War die Aufgabe missverständlich? Diese kurze Reflexion ist der schnellste Weg, um die "Denkweise" des Modells zu verinnerlichen und die eigenen Anweisungen zu verbessern.
 
 Indem Sie diese strategischen und praktischen ersten Schritte gehen, entmystifizieren Sie das Thema Künstliche Intelligenz und machen es zu dem, was es sein sollte: ein selbstverständlicher und wertvoller Teil Ihres professionellen Werkzeugkastens.
-
-<!-- ==================== ENDE KAPITEL: Kapitel_02_Strategie_und_erste_Schritte.md ==================== -->
-
-<!-- ==================== KAPITEL: Kapitel_03_Vergabeprozess_im_KI-Zeitalter.md ==================== -->
 
 # **Kapitel 3: Der Vergabeprozess im KI-Zeitalter – Eine neue Landkarte**
 
@@ -1186,10 +1170,6 @@ Mit dem Zuschlag ist das Vergabeverfahren nicht beendet. Die Umsetzung des Vertr
 **Der Game-Changer:** Das Vertragsmanagement wird von einer passiven, administrativen Aufgabe zu einem aktiven, datengestützten Steuerungsprozess. Sie erhöhen die Chancen, dass Sie am Ende auch die Leistung erhalten, für die Sie bezahlt haben, und können proaktiv auf Probleme reagieren.
 
 Indem Sie den Vergabeprozess durch diese neue "KI-Brille" betrachten, erkennen Sie, dass es nicht um die Automatisierung des Menschen geht, sondern um die Befähigung des Experten. Jeder Schritt wird schneller, transparenter und fundierter – und setzt Ihre wertvollste Ressource frei: Ihre Zeit für strategische Entscheidungen.
-
-<!-- ==================== ENDE KAPITEL: Kapitel_03_Vergabeprozess_im_KI-Zeitalter.md ==================== -->
-
-<!-- ==================== KAPITEL: Kapitel_04_Ausschreibungswerkstatt.md ==================== -->
 
 # **Kapitel 4: Die Ausschreibungswerkstatt – In 5 Schritten von der Idee zur fertigen Vergabeunterlage**
 
@@ -1363,10 +1343,6 @@ Eine gute Leistungsbeschreibung ist nur die halbe Miete. Wir müssen auch defini
 **Fazit der Werkstatt:**
 Durch diese fünf strukturierten Schritte haben wir nicht nur eine vollständige Vergabeunterlage erstellt. Wir haben einen qualitativ hochwertigeren, datengestützten und in sich konsistenten Satz von Dokumenten geschaffen – und das in einem Bruchteil der Zeit. Wir haben unsere menschliche Expertise nicht durch KI ersetzt, sondern sie durch einen leistungsstarken Assistenten auf die strategisch entscheidenden Punkte fokussiert: die Definition von Zielen, die Bewertung von Ergebnissen und die finale, menschliche Entscheidung.
 
-<!-- ==================== ENDE KAPITEL: Kapitel_04_Ausschreibungswerkstatt.2md ==================== -->
-
-<!-- ==================== KAPITEL: Kapitel_05_Intelligente_Angebotswertung.md ==================== -->
-
 # **Kapitel 5: Die intelligente Angebotswertung – Fairness, Effizienz und Tiefe im Bewertungs-Cockpit**
 
 ## **Einleitung: Vom mühsamen Prüfer zum strategischen Entscheider**
@@ -1498,10 +1474,6 @@ Nachdem alle Punkte vergeben und die Entscheidung getroffen ist, muss diese im V
 **Ergebnis dieses Schritts:** Sie erhalten in wenigen Minuten einen qualitativ hochwertigen Entwurf für Ihre Vergabeakte. Die Begründungen sind detailliert und basieren direkt auf den zuvor erarbeiteten Fakten. Der Aufwand für die Dokumentation sinkt, während die Qualität und Revisionssicherheit steigen, was die Verteidigung der Entscheidung im Falle eines Nachprüfungsverfahrens erheblich erleichtert. 
 
 Indem Sie diesen vierstufigen Prozess anwenden, transformieren Sie die Angebotswertung. Sie gewinnen Zeit, erhöhen die Objektivität und verbessern die Qualität Ihrer Dokumentation. Sie nutzen Ihre menschliche Expertise dort, wo sie unersetzlich ist: bei der strategischen Bewertung und der finalen, verantwortungsvollen Entscheidung.
-
-<!-- ==================== ENDE KAPITEL: Kapitel_05_Intelligente_Angebotswertung.md ==================== -->
-
-<!-- ==================== KAPITEL: Kapitel_06_Vertragsmanagement_und_Sondersituationen.md ==================== -->
 
 # **Kapitel 6: Jenseits des Zuschlags – Vertragsmanagement und Sondersituationen mit KI meistern**
 
@@ -1661,10 +1633,6 @@ Ein Auftragnehmer erbringt seine Leistung trotz mehrfacher Aufforderung weiterhi
 
 Indem Sie KI auch nach dem Zuschlag als festen Bestandteil Ihres Werkzeugkastens etablieren, steigern Sie nicht nur die Effizienz, sondern vor allem die Qualität und die Steuerungssicherheit Ihrer Projekte.
 
-<!-- ==================== ENDE KAPITEL: Kapitel_06_Vertragsmanagement_und_Sondersituationen.md ==================== -->
-
-<!-- ==================== KAPITEL: Kapitel_07_Implementierung_in_der_Praxis.md ==================== -->
-
 # **Kapitel 7: Die KI-Implementierung in der Praxis – Technik, Sicherheit und Kosten im Griff**
 
 ## **Einleitung: Die richtigen Weichen für die Zukunft stellen**
@@ -1801,10 +1769,6 @@ Die Preismodelle der Anbieter sind oft auf den ersten Blick verlockend, können 
 
 Die Implementierung von KI ist eine strategische Investition, keine einfache Software-Beschaffung. Indem Sie die Fragen der Souveränität, der Sicherheit und der Gesamtkosten von Anfang an in den Mittelpunkt stellen, schaffen Sie ein nachhaltiges Fundament für die Zukunft Ihrer Verwaltung.
 
-<!-- ==================== ENDE KAPITEL: Kapitel_07_Implementierung_in_der_Praxis.md ==================== -->
-
-<!-- ==================== KAPITEL: Kapitel_08_Ausblick_und_Fazit.md ==================== -->
-
 # **Kapitel 8: Die Zukunft der Vergabe hat bereits begonnen – Ein strategischer Ausblick und Fazit**
 
 ## **Einleitung: Der Anfang einer neuen Ära**
@@ -1892,10 +1856,6 @@ Die drei wichtigsten Erkenntnisse sind:
 3.  **Denken Sie über Effizienz hinaus.** Der wahre Wert dieser Technologie liegt nicht nur darin, alte Prozesse schneller zu machen, sondern darin, bessere, fundiertere, fairere und nachhaltigere Entscheidungen zu treffen. Die KI ermöglicht es uns, die Qualität der öffentlichen Beschaffung auf ein neues Niveau zu heben.
 
 Die öffentliche Vergabe der Zukunft wird intelligenter, transparenter und strategischer sein. Sie wird den Fokus von der reinen Prozessadministration auf die Gestaltung von Lösungen für die Bürgerinnen und Bürger verlagern. Sie haben jetzt die einmalige Chance, diese Zukunft von Anfang an mitzugestalten. Die Zukunft der Vergabe beginnt nicht in den Rechenzentren im Silicon Valley, sondern an Ihrem Schreibtisch. Sie hat bereits begonnen.
-
-<!-- ==================== ENDE KAPITEL: Kapitel_08_Ausblick_und_Fazit.md ==================== -->
-
-<!-- ==================== ANHANG: Anhang_A_Prompt_Bibliothek.md ==================== -->
 
 # **Anhang A: Ausgewählte Prompt-Bibliothek**
 
@@ -2069,9 +2029,9 @@ Dieser Anhang bietet eine kuratierte Auswahl der leistungsstärksten und vielsei
 > **Format:** Erstelle einen klar strukturierten Vermerk, der diese vier Punkte übersichtlich darstellt.
 
 ---
-`<!-- ==================== ENDE ANHANG: Anhang_A_Prompt_Bibliothek.md ==================== -->`
+``
 
-`<!-- ==================== ANHANG: Anhang_B_Technische_Code_Beispiele.md ==================== -->`
+``
 
 # **Anhang B: Technische Code-Beispiele (Python)**
 
@@ -2303,9 +2263,9 @@ if __name__ == "__main__":
 ```
 
 ---
-`<!-- ==================== ENDE ANHANG: Anhang_B_Technische_Code_Beispiele.md ==================== -->`
+``
 
-`<!-- ==================== ANHANG: Anhang_C_Detaillierte_Checklisten.md ==================== -->`
+``
 
 # **Anhang C: Detaillierte Checklisten für die KI-Implementierung**
 
@@ -2414,6 +2374,4 @@ Die Implementierung ist nur der Anfang. Der langfristige Erfolg hängt vom konti
     *   [ ] Gibt es eine Strategie für den Fall, dass der Anbieter den Dienst einstellt oder die Preise drastisch erhöht?
 
 ---
-`<!-- ==================== ENDE ANHANG: Anhang_C_Detaillierte_Checklisten.md ==================== -->`
-
-<!-- ==================== END OF BOOK ==================== -->
+``

@@ -1,3 +1,15 @@
+---
+title: "Das Ende des Formulars: Wie Sprachmodelle die öffentliche Vergabe neu definieren"
+subtitle: "Ein Praxisleitfaden für die Revolution im Beschaffungswesen"
+author: "Dr. Daniel Rau"
+publisher: "Eigenverlag"
+date: "2025-01-15"
+language: "de"
+rights: "Copyright © 2025 Dr. Daniel Rau. All rights reserved."
+description: "Ein umfassender Praxisleitfaden für die Nutzung von Sprachmodellen in der öffentlichen Beschaffung"
+subject: "Öffentliche Beschaffung, Künstliche Intelligenz, Vergaberecht, Sprachmodelle, Digitalisierung"
+---
+
 <!-- ==================== START OF BOOK ==================== -->
 
 # **Das Ende des Formulars: Wie Sprachmodelle die öffentliche Vergabe neu definieren**
