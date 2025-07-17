@@ -1,15 +1,17 @@
 
 /* Professional Non-Fiction Book Style */
+/* Similar to technical handbooks and "For Dummies" series */
+
 body {
-    font-family: "Georgia", "Times New Roman", serif;
+    font-family: "Times New Roman", serif;
     line-height: 1.6;
-    margin: 0 2em;
+    margin: 0;
     padding: 0;
     font-size: 11pt;
     color: #333;
-    text-align: justify;
 }
 
+/* Headings */
 h1 {
     font-size: 1.8em;
     font-weight: bold;
@@ -47,11 +49,14 @@ h4 {
     margin-bottom: 0.5em;
 }
 
+/* Paragraphs */
 p {
     margin-bottom: 1em;
+    text-align: justify;
     text-indent: 0;
 }
 
+/* Lists */
 ul, ol {
     margin-bottom: 1em;
     padding-left: 1.5em;
@@ -61,6 +66,7 @@ li {
     margin-bottom: 0.3em;
 }
 
+/* Code blocks */
 pre {
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;
@@ -68,7 +74,7 @@ pre {
     padding: 1em;
     margin: 1em 0;
     overflow-x: auto;
-    font-family: "Consolas", "Monaco", monospace;
+    font-family: "Courier New", monospace;
     font-size: 0.9em;
     line-height: 1.4;
 }
@@ -77,11 +83,12 @@ code {
     background-color: #f8f9fa;
     padding: 0.2em 0.4em;
     border-radius: 3px;
-    font-family: "Consolas", "Monaco", monospace;
+    font-family: "Courier New", monospace;
     font-size: 0.9em;
-    color: #d63384;
+    color: #e74c3c;
 }
 
+/* Blockquotes */
 blockquote {
     margin: 1em 0;
     padding: 0.5em 1em;
@@ -90,6 +97,7 @@ blockquote {
     font-style: italic;
 }
 
+/* Tables */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -109,6 +117,53 @@ th {
     font-weight: bold;
 }
 
+/* Special elements */
+.chapter-intro {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 2em;
+    border-top: 1px solid #bdc3c7;
+    border-bottom: 1px solid #bdc3c7;
+    padding: 1em 0;
+}
+
+.tip-box {
+    background-color: #e8f5e8;
+    border: 1px solid #27ae60;
+    border-left: 4px solid #27ae60;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 4px;
+}
+
+.warning-box {
+    background-color: #fdf2e8;
+    border: 1px solid #f39c12;
+    border-left: 4px solid #f39c12;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 4px;
+}
+
+.example-box {
+    background-color: #e8f4f8;
+    border: 1px solid #3498db;
+    border-left: 4px solid #3498db;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 4px;
+}
+
+/* Page breaks */
+.page-break {
+    page-break-before: always;
+}
+
+/* Navigation */
+.toc {
+    margin-bottom: 2em;
+}
+
 .toc ul {
     list-style-type: none;
     padding-left: 0;
@@ -121,4 +176,35 @@ th {
 .toc a {
     text-decoration: none;
     color: #3498db;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+/* Professional spacing */
+.chapter-end {
+    margin-bottom: 3em;
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 1em;
+}
+
+/* Responsive design for different screen sizes */
+@media (max-width: 600px) {
+    body {
+        font-size: 10pt;
+        line-height: 1.5;
+    }
+    
+    h1 {
+        font-size: 1.6em;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+    
+    pre {
+        font-size: 0.8em;
+    }
 }
