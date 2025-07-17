@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .box { fill: #e8f5e8; stroke: #4a9a4a; stroke-width: 2; }
+      .ki-box { fill: #fff3cd; stroke: #f39c12; stroke-width: 2; }
+      .arrow { stroke: #4a9a4a; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .bi-arrow { stroke: #4a9a4a; stroke-width: 2; fill: none; marker-end: url(#arrowhead); marker-start: url(#arrowhead); }
+      .text { font-family: Arial, sans-serif; font-size: 12px; text-anchor: middle; }
+      .label { font-family: Arial, sans-serif; font-size: 10px; text-anchor: middle; fill: #666; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a9a4a" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="300" y="20" class="text" style="font-size: 16px; font-weight: bold;">Collaborative Intelligence Framework</text>
+  
+  <!-- Left: Fachbereich -->
+  <rect class="box" x="20" y="80" width="120" height="60" rx="5"/>
+  <text class="text" x="80" y="105">Fachbereich</text>
+  <text class="text" x="80" y="125">Fachexpertise</text>
+  
+  <!-- Center: KI-System -->
+  <rect class="ki-box" x="240" y="80" width="120" height="60" rx="5"/>
+  <text class="text" x="300" y="105">KI-System</text>
+  <text class="text" x="300" y="125">Intelligente Analyse</text>
+  
+  <!-- Right: Vergabestelle -->
+  <rect class="box" x="460" y="80" width="120" height="60" rx="5"/>
+  <text class="text" x="520" y="105">Vergabestelle</text>
+  <text class="text" x="520" y="125">Rechtsprüfung</text>
+  
+  <!-- Bidirectional arrows -->
+  <line class="bi-arrow" x1="145" y1="110" x2="235" y2="110"/>
+  <line class="bi-arrow" x1="365" y1="110" x2="455" y2="110"/>
+  
+  <!-- Lower layer -->
+  <rect class="box" x="20" y="180" width="120" height="40" rx="5"/>
+  <text class="text" x="80" y="205">Bedarfsdefinition</text>
+  
+  <rect class="ki-box" x="240" y="180" width="120" height="40" rx="5"/>
+  <text class="text" x="300" y="205">Übersetzung</text>
+  
+  <rect class="box" x="460" y="180" width="120" height="40" rx="5"/>
+  <text class="text" x="520" y="205">Ausschreibung</text>
+  
+  <!-- Arrows for lower layer -->
+  <line class="arrow" x1="145" y1="200" x2="235" y2="200"/>
+  <line class="arrow" x1="365" y1="200" x2="455" y2="200"/>
+  
+  <!-- Vertical connections -->
+  <line class="arrow" x1="80" y1="145" x2="80" y2="175"/>
+  <line class="arrow" x1="300" y1="145" x2="300" y2="175"/>
+  <line class="arrow" x1="520" y1="145" x2="520" y2="175"/>
+  
+  <!-- Key principles -->
+  <text x="50" y="260" class="label" style="font-size: 11px; font-weight: bold;">• Augmented Decision Making</text>
+  <text x="250" y="260" class="label" style="font-size: 11px; font-weight: bold;">• Intelligent Translation</text>
+  <text x="450" y="260" class="label" style="font-size: 11px; font-weight: bold;">• Predictive Coordination</text>
+</svg>

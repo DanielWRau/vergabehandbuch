@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .box { fill: #f0f8ff; stroke: #2e5cb8; stroke-width: 2; }
+      .arrow { stroke: #2e5cb8; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .text { font-family: Arial, sans-serif; font-size: 12px; text-anchor: middle; }
+      .label { font-family: Arial, sans-serif; font-size: 10px; text-anchor: middle; fill: #666; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2e5cb8" />
+    </marker>
+  </defs>
+  
+  <!-- Process boxes -->
+  <rect class="box" x="10" y="30" width="80" height="40" rx="5"/>
+  <text class="text" x="50" y="45">Fachbereich</text>
+  <text class="text" x="50" y="60">Bedarfsermittlung</text>
+  
+  <rect class="box" x="130" y="30" width="80" height="40" rx="5"/>
+  <text class="text" x="170" y="45">Vergabestelle</text>
+  <text class="text" x="170" y="60">Rechtsprüfung</text>
+  
+  <rect class="box" x="250" y="30" width="80" height="40" rx="5"/>
+  <text class="text" x="290" y="50">Ausschreibung</text>
+  
+  <rect class="box" x="370" y="30" width="80" height="40" rx="5"/>
+  <text class="text" x="410" y="45">Angebots-</text>
+  <text class="text" x="410" y="60">bewertung</text>
+  
+  <rect class="box" x="490" y="30" width="80" height="40" rx="5"/>
+  <text class="text" x="530" y="50">Zuschlag</text>
+  
+  <!-- Arrows -->
+  <line class="arrow" x1="90" y1="50" x2="125" y2="50"/>
+  <line class="arrow" x1="210" y1="50" x2="245" y2="50"/>
+  <line class="arrow" x1="330" y1="50" x2="365" y2="50"/>
+  <line class="arrow" x1="450" y1="50" x2="485" y2="50"/>
+  
+  <!-- Process labels -->
+  <text class="label" x="50" y="90">Fachexpertise</text>
+  <text class="label" x="170" y="90">Bedarfsanalyse</text>
+  <text class="label" x="290" y="90">Marktanalyse</text>
+  <text class="label" x="410" y="90">Bewertung</text>
+  <text class="label" x="530" y="90">Vertragsabschluss</text>
+  
+  <!-- Title -->
+  <text x="290" y="15" class="text" style="font-size: 14px; font-weight: bold;">Traditioneller Beschaffungsprozess</text>
+  
+  <!-- Timeline -->
+  <text x="50" y="110" class="label" style="font-size: 10px;">(Woche 1)</text>
+  <text x="170" y="110" class="label" style="font-size: 10px;">(Woche 2)</text>
+  <text x="290" y="110" class="label" style="font-size: 10px;">(Woche 3)</text>
+  <text x="410" y="110" class="label" style="font-size: 10px;">(Woche 4)</text>
+  <text x="530" y="110" class="label" style="font-size: 10px;">(Woche 5)</text>
+</svg>

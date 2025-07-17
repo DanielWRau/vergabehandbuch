@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .phase-box { fill: #f3e5f5; stroke: #7b1fa2; stroke-width: 2; }
+      .milestone { fill: #e8f5e8; stroke: #2e7d32; stroke-width: 2; }
+      .arrow { stroke: #7b1fa2; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .text { font-family: Arial, sans-serif; font-size: 11px; text-anchor: middle; }
+      .title { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; text-anchor: middle; }
+      .phase-title { font-family: Arial, sans-serif; font-size: 10px; font-weight: bold; text-anchor: middle; }
+      .timeline { font-family: Arial, sans-serif; font-size: 9px; text-anchor: middle; fill: #666; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7b1fa2" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="20" class="title">Implementierungsroadmap für KI-Transformation</text>
+  
+  <!-- Timeline -->
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#ccc" stroke-width="1"/>
+  
+  <!-- Phase 1: 0-6 Monate -->
+  <rect class="phase-box" x="50" y="70" width="150" height="80" rx="5"/>
+  <text x="125" y="85" class="phase-title">Phase 1: Quick Wins</text>
+  <text x="125" y="100" class="text">KI-Readiness Assessment</text>
+  <text x="125" y="115" class="text">Pilot-Projekt Setup</text>
+  <text x="125" y="130" class="text">Tool-Evaluation</text>
+  <text x="125" y="145" class="text">Erste Automatisierung</text>
+  
+  <!-- Phase 2: 6-18 Monate -->
+  <rect class="phase-box" x="220" y="70" width="150" height="80" rx="5"/>
+  <text x="295" y="85" class="phase-title">Phase 2: Systemintegration</text>
+  <text x="295" y="100" class="text">Workflow-Automatisierung</text>
+  <text x="295" y="115" class="text">Advanced Analytics</text>
+  <text x="295" y="130" class="text">Neue Rollen etablieren</text>
+  <text x="295" y="145" class="text">Cross-funktionale Teams</text>
+  
+  <!-- Phase 3: 18+ Monate -->
+  <rect class="phase-box" x="390" y="70" width="150" height="80" rx="5"/>
+  <text x="465" y="85" class="phase-title">Phase 3: Strategische Ziele</text>
+  <text x="465" y="100" class="text">Autonome Prozesse</text>
+  <text x="465" y="115" class="text">Ecosystem-Integration</text>
+  <text x="465" y="130" class="text">Innovation Leadership</text>
+  <text x="465" y="145" class="text">Best-Practice-Sharing</text>
+  
+  <!-- Timeline labels -->
+  <text x="125" y="170" class="timeline">0-6 Monate</text>
+  <text x="295" y="170" class="timeline">6-18 Monate</text>
+  <text x="465" y="170" class="timeline">18+ Monate</text>
+  
+  <!-- Arrows between phases -->
+  <line class="arrow" x1="205" y1="110" x2="215" y2="110"/>
+  <line class="arrow" x1="375" y1="110" x2="385" y2="110"/>
+  
+  <!-- Key milestones -->
+  <rect class="milestone" x="580" y="80" width="120" height="25" rx="3"/>
+  <text x="640" y="97" class="text" style="font-size: 10px; font-weight: bold;">Erste KI-Erfolge</text>
+  
+  <rect class="milestone" x="580" y="110" width="120" height="25" rx="3"/>
+  <text x="640" y="127" class="text" style="font-size: 10px; font-weight: bold;">Vollautomatisierung</text>
+  
+  <rect class="milestone" x="580" y="140" width="120" height="25" rx="3"/>
+  <text x="640" y="157" class="text" style="font-size: 10px; font-weight: bold;">Marktführerschaft</text>
+  
+  <!-- Success metrics -->
+  <text x="400" y="200" class="title" style="font-size: 12px;">Erfolgsmessung</text>
+  <text x="200" y="220" class="text" style="font-size: 10px;">• 70-80% Zeitersparnis</text>
+  <text x="200" y="235" class="text" style="font-size: 10px;">• 30-50% weniger Durchlaufzeit</text>
+  <text x="200" y="250" class="text" style="font-size: 10px;">• 90% weniger manuelle Abstimmung</text>
+  <text x="200" y="265" class="text" style="font-size: 10px;">• 5-10% Kosteneinsparung</text>
+  
+  <text x="600" y="220" class="text" style="font-size: 10px;">• Höhere Transparenz</text>
+  <text x="600" y="235" class="text" style="font-size: 10px;">• Bessere Compliance</text>
+  <text x="600" y="250" class="text" style="font-size: 10px;">• Stärkere Zusammenarbeit</text>
+  <text x="600" y="265" class="text" style="font-size: 10px;">• Mehr Innovation</text>
+</svg>

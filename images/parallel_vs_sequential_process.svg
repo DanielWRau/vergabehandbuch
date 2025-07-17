@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .old-box { fill: #ffecec; stroke: #d32f2f; stroke-width: 2; }
+      .new-box { fill: #e8f5e8; stroke: #4a9a4a; stroke-width: 2; }
+      .parallel-box { fill: #f0f8ff; stroke: #2e5cb8; stroke-width: 1; }
+      .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .text { font-family: Arial, sans-serif; font-size: 11px; text-anchor: middle; }
+      .title { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; text-anchor: middle; }
+      .label { font-family: Arial, sans-serif; font-size: 10px; text-anchor: middle; fill: #666; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="20" class="title">Prozessoptimierung: Von sequentiell zu parallel</text>
+  
+  <!-- Traditional sequential process -->
+  <text x="400" y="50" class="title" style="font-size: 12px;">Traditioneller sequentieller Prozess</text>
+  
+  <rect class="old-box" x="20" y="70" width="120" height="30" rx="3"/>
+  <text class="text" x="80" y="90">Bedarfsermittlung</text>
+  
+  <rect class="old-box" x="160" y="70" width="120" height="30" rx="3"/>
+  <text class="text" x="220" y="90">Fachprüfung</text>
+  
+  <rect class="old-box" x="300" y="70" width="120" height="30" rx="3"/>
+  <text class="text" x="360" y="90">Vergabeprüfung</text>
+  
+  <rect class="old-box" x="440" y="70" width="120" height="30" rx="3"/>
+  <text class="text" x="500" y="90">Ausschreibung</text>
+  
+  <rect class="old-box" x="580" y="70" width="120" height="30" rx="3"/>
+  <text class="text" x="640" y="90">Bewertung</text>
+  
+  <!-- Arrows for traditional process -->
+  <line class="arrow" x1="145" y1="85" x2="155" y2="85"/>
+  <line class="arrow" x1="285" y1="85" x2="295" y2="85"/>
+  <line class="arrow" x1="425" y1="85" x2="435" y2="85"/>
+  <line class="arrow" x1="565" y1="85" x2="575" y2="85"/>
+  
+  <!-- Time labels for traditional process -->
+  <text x="80" y="120" class="label">(Woche 1)</text>
+  <text x="220" y="120" class="label">(Woche 2)</text>
+  <text x="360" y="120" class="label">(Woche 3)</text>
+  <text x="500" y="120" class="label">(Woche 4)</text>
+  <text x="640" y="120" class="label">(Woche 5)</text>
+  
+  <!-- Separator line -->
+  <line x1="20" y1="150" x2="780" y2="150" stroke="#ccc" stroke-width="1"/>
+  
+  <!-- KI-optimized parallel process -->
+  <text x="400" y="180" class="title" style="font-size: 12px;">KI-optimierter paralleler Prozess</text>
+  
+  <rect class="new-box" x="20" y="200" width="100" height="30" rx="3"/>
+  <text class="text" x="70" y="220">Bedarfsermittlung</text>
+  
+  <rect class="new-box" x="140" y="200" width="80" height="30" rx="3"/>
+  <text class="text" x="180" y="220">KI-Analyse</text>
+  
+  <rect class="new-box" x="240" y="200" width="120" height="30" rx="3"/>
+  <text class="text" x="300" y="220">Parallele Prüfung</text>
+  
+  <rect class="new-box" x="380" y="200" width="100" height="30" rx="3"/>
+  <text class="text" x="430" y="220">Konsolidierung</text>
+  
+  <rect class="new-box" x="500" y="200" width="100" height="30" rx="3"/>
+  <text class="text" x="550" y="220">Ausschreibung</text>
+  
+  <!-- Arrows for new process -->
+  <line class="arrow" x1="125" y1="215" x2="135" y2="215"/>
+  <line class="arrow" x1="225" y1="215" x2="235" y2="215"/>
+  <line class="arrow" x1="365" y1="215" x2="375" y2="215"/>
+  <line class="arrow" x1="485" y1="215" x2="495" y2="215"/>
+  
+  <!-- Parallel processing boxes -->
+  <rect class="parallel-box" x="250" y="260" width="80" height="25" rx="2"/>
+  <text class="text" x="290" y="277">Fachprüfung</text>
+  
+  <rect class="parallel-box" x="250" y="290" width="80" height="25" rx="2"/>
+  <text class="text" x="290" y="307">Vergabeprüfung</text>
+  
+  <rect class="parallel-box" x="250" y="320" width="80" height="25" rx="2"/>
+  <text class="text" x="290" y="337">Rechtsprüfung</text>
+  
+  <!-- Vertical line indicating parallel processing -->
+  <line x1="300" y1="235" x2="300" y2="255" stroke="#2e5cb8" stroke-width="2"/>
+  
+  <!-- Bracket for parallel processing -->
+  <path d="M 245 260 L 240 260 L 240 345 L 245 345" stroke="#2e5cb8" stroke-width="2" fill="none"/>
+  <path d="M 335 260 L 340 260 L 340 345 L 335 345" stroke="#2e5cb8" stroke-width="2" fill="none"/>
+  
+  <!-- Time labels for new process -->
+  <text x="70" y="250" class="label">(Tag 1)</text>
+  <text x="180" y="250" class="label">(Tag 2)</text>
+  <text x="300" y="250" class="label">(Tag 3-4)</text>
+  <text x="430" y="250" class="label">(Tag 5)</text>
+  <text x="550" y="250" class="label">(Tag 6)</text>
+  
+  <!-- Improvement indicator -->
+  <text x="400" y="375" class="title" style="font-size: 12px; fill: #4a9a4a;">Zeitersparnis: 70-80% Reduzierung der Durchlaufzeit</text>
+</svg>
